@@ -1,0 +1,141 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  background-color: #090b1a;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  width: 20.4375rem;
+  height: 48.75rem;
+  color: white;
+  background-color: #1b1938;
+  text-align: center;
+}
+
+.card .image {
+  background: url("../images/image-header-mobile.jpg") no-repeat;
+  width: 20.4375rem;
+  height: 15rem;
+  border-radius: 10px 10px 0px 0px;
+  background-size: contain;
+}
+
+.card h1 {
+  font-size: 28px;
+  padding: 2rem 2.125rem 0rem 2.125rem;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.75;
+  opacity: 0.6;
+  padding: 1rem 2.125rem 0rem 2.125rem;
+}
+
+.card .insights {
+  color: #aa5cdb;
+}
+
+.card ul {
+  padding-top: 2.5rem;
+  list-style: none;
+}
+
+.card li {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 1.75rem;
+}
+
+.card li .type {
+  font-family: 'Lexend Deca', sans-serif;
+  text-transform: uppercase;
+  display: block;
+  font-size: 13px;
+  opacity: 0.4;
+  margin-top: 0.3rem;
+  font-weight: normal;
+  letter-spacing: 1.75px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 69.375rem;
+    height: 27.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+  }
+  .card .info {
+    width: 35.675rem;
+    height: 27.9rem;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .card .image {
+    -webkit-filter: saturate(100%) invert(46%) sepia(42%) saturate(1086%) hue-rotate(235deg) brightness(90%) contrast(89%);
+            filter: saturate(100%) invert(46%) sepia(42%) saturate(1086%) hue-rotate(235deg) brightness(90%) contrast(89%);
+    width: 33.7rem;
+    height: 27.9rem;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    background: url("../images/image-header-desktop.jpg") no-repeat;
+  }
+  .card h1 {
+    padding: 4.5rem 7.625rem 0rem 4.5rem;
+    font-size: 35px;
+  }
+  .card p {
+    padding: 1.75rem 7.625rem 0rem 4.5rem;
+    line-height: 1.7;
+  }
+  .card ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4.5rem 0rem 0rem 4.5rem;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+  .card ul .type {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

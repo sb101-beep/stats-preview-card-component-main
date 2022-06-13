@@ -1,0 +1,131 @@
+$veryDarkBlue: hsl(233, 47%, 7%);
+$darkDesaturatedBlue: hsl(244, 38%, 16%);
+$softViolet: hsl(277, 64%, 61%);
+
+$white: hsl(0, 0%, 100%);
+$slightlyTransparentWhiteMain: hsla(0, 0%, 100%, 0.75);
+$slightlyTransparentWhiteHeading: hsla(0, 0%, 100%, 0.6);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  background-color: $veryDarkBlue;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 20.4375rem;
+  height: 48.75rem;
+  color: $white;
+  background-color: $darkDesaturatedBlue;
+  text-align: center;
+
+  .image {
+    background: url('../images/image-header-mobile.jpg') no-repeat;
+    width: 20.4375rem;
+    height: 15rem;
+    border-radius: 10px 10px 0px 0px;
+    background-size: contain;
+  }
+
+  h1 {
+    font-size: 28px;
+    padding: 2rem 2.125rem 0rem 2.125rem;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.75;
+    opacity: 0.6;
+    padding: 1rem 2.125rem 0rem 2.125rem;
+  }
+
+  .insights {
+    color: $softViolet;
+  }
+
+  ul {
+    padding-top: 2.5rem;
+    list-style: none;
+  }
+
+  li {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 1.75rem;
+
+    .type {
+      font-family: 'Lexend Deca', sans-serif;
+      text-transform: uppercase;
+      display: block;
+      font-size: 13px;
+      opacity: 0.4;
+      margin-top: 0.3rem;
+      font-weight: normal;
+      letter-spacing: 1.75px;
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 69.375rem;
+    height: 27.9rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    .info {
+      width: 35.675rem;
+      height: 27.9rem;
+      order: 0;
+    }
+
+    .image {
+      filter: saturate(100%) invert(46%) sepia(42%) saturate(1086%) hue-rotate(235deg) brightness(90%) contrast(89%);
+      width: 33.7rem;
+      height: 27.9rem;
+      background-size: cover;
+      border-radius: 0px 10px 10px 0px;
+      order: 1;
+      background: url('../images/image-header-desktop.jpg') no-repeat;
+    }
+
+    h1 {
+      padding: 4.5rem 7.625rem 0rem 4.5rem;
+      font-size: 35px;
+    }
+
+    p {
+      padding: 1.75rem 7.625rem 0rem 4.5rem;
+      line-height: 1.7;
+    }
+
+    ul {
+      display: flex;
+      padding: 4.5rem 0rem 0rem 4.5rem;
+      column-gap: 3rem;
+
+      .type {
+        font-size: 12px;
+      }
+    }
+
+  }
+}
