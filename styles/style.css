@@ -41,6 +41,8 @@ main {
 }
 
 .card .image {
+  -webkit-filter: invert(16%) sepia(60%) saturate(486%) hue-rotate(235deg) brightness(80%) contrast(69%);
+          filter: invert(16%) sepia(60%) saturate(486%) hue-rotate(235deg) brightness(80%) contrast(69%);
   background: url("../images/image-header-mobile.jpg") no-repeat;
   width: 20.4375rem;
   height: 15rem;
@@ -107,8 +109,6 @@ main {
             order: 0;
   }
   .card .image {
-    -webkit-filter: saturate(100%) invert(46%) sepia(42%) saturate(1086%) hue-rotate(235deg) brightness(90%) contrast(89%);
-            filter: saturate(100%) invert(46%) sepia(42%) saturate(1086%) hue-rotate(235deg) brightness(90%) contrast(89%);
     width: 33.7rem;
     height: 27.9rem;
     background-size: cover;
