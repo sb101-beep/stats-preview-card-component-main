@@ -36,7 +36,8 @@ main {
   text-align: center;
 
   .image {
-    filter: invert(16%) sepia(60%) saturate(486%) hue-rotate(235deg) brightness(80%) contrast(69%);
+    filter: invert(6%) sepia(30%) saturate(986%) hue-rotate(235deg) brightness(60%) contrast(89%) opacity(100%);
+    mix-blend-mode: screen;
     background: url('../images/image-header-mobile.jpg') no-repeat;
     width: 20.4375rem;
     height: 15rem;
